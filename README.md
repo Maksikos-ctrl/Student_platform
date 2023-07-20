@@ -25,6 +25,13 @@ The Student Platform is a web application designed to streamline the process of 
 
 We welcome contributions to improve and extend the functionality of the Student Platform. Please feel free to open issues for bug reports, feature requests, or any other suggestions.
 
+
+## Stack
+
+![1689890384738](image/README/1689890384738.png)![1689890394731](image/README/1689890394731.png)
+
+![1689890424011](image/README/1689890424011.png)![1689890434776](image/README/1689890434776.png)
+
 ## License
 
 The Student Platform is open-source and released under the [MIT License](https://chat.openai.com/c/LICENSE). Feel free to use and modify it for your educational needs.
