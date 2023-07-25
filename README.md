@@ -30,9 +30,6 @@ We welcome contributions to improve and extend the functionality of the Student 
 
 ![1689890424011](image/README/1689890424011.png)![1689890434776](image/README/1689890434776.png)
 
-
-
-
 ### To roll migrations, if there is no alembic.ini file yet, you need to run the following command in the terminal:
 
 ```
@@ -46,11 +43,25 @@ After that, a folder with migrations and a configuration file for alembic will b
 
 `from myapp import mymodel`
 
-
-- Next, enter: ```alembic revision --autogenerate -m "comment"```
+- Next, enter: ``alembic revision --autogenerate -m "comment"``
 - Migration will be created
-- Next, enter: ```alembic upgrade heads```
+- Next, enter: ``alembic upgrade heads``
 
+#### Run Docker container
+
+``docker-compose -f docker-compose-local.yaml up -d``
+
+or through the Makefile
+
+``make up``
+
+#### Stop or remove docker container
+
+``docker-compose -f docker-compose-local.yaml down && docker network prune --force``
+
+or through the Makefile
+
+``make down``
 
 ## License
 
