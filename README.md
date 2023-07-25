@@ -1,4 +1,3 @@
-
 # Student Platform for Test Posting and Grading
 
 The Student Platform is a web application designed to streamline the process of posting tests and exams for students and enabling teachers to efficiently manage and grade those tests. Leveraging the powerful combination of FastAPI, PostgreSQL, and NGINX, this platform offers a robust and scalable solution for educational institutions to effectively conduct assessments and monitor student progress.
@@ -25,12 +24,33 @@ The Student Platform is a web application designed to streamline the process of 
 
 We welcome contributions to improve and extend the functionality of the Student Platform. Please feel free to open issues for bug reports, feature requests, or any other suggestions.
 
-
 ## Stack
 
 ![1689890384738](image/README/1689890384738.png)![1689890394731](image/README/1689890394731.png)
 
 ![1689890424011](image/README/1689890424011.png)![1689890434776](image/README/1689890434776.png)
+
+
+
+
+### To roll migrations, if there is no alembic.ini file yet, you need to run the following command in the terminal:
+
+```
+alembic init migrations
+```
+
+After that, a folder with migrations and a configuration file for alembic will be created.
+
+- In alembic.ini, you need to set the address of the database into which we will roll the migrations.
+- Then we go to the folder with migrations and open env.py, there we make changes to the block where it is written
+
+`from myapp import mymodel`
+
+
+- Next, enter: ```alembic revision --autogenerate -m "comment"```
+- Migration will be created
+- Next, enter: ```alembic upgrade heads```
+
 
 ## License
 
