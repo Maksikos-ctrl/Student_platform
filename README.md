@@ -55,7 +55,7 @@ or through the Makefile
 
 ``make up``
 
-#### Stop or remove docker container
+#### Stop or remove docker container	
 
 ``docker-compose -f docker-compose-local.yaml down && docker network prune --force``
 
